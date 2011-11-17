@@ -1,5 +1,5 @@
 #source 'http://rubygems.org'
-source 'http://127.0.0.1:8080'
+source 'http://myrubygems'
 
 gem 'rails', '3.1.1'
 
@@ -62,3 +62,4 @@ group :development do
   gem "thin"
 end
 
+gem 'capistrano'
