@@ -178,7 +178,7 @@ ActiveRecord::Schema.define(:version => 20111115160547) do
     t.string   "imei"
     t.string   "clienttype"
     t.string   "devicemodel"
-    t.string   "screensize"
+    t.string   "scrrensize"
     t.string   "rank"
     t.integer  "answers_count"
     t.string   "portraitlink",  :limit => 1024

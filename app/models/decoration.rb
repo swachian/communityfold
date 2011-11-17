@@ -1,4 +1,4 @@
-class Decorations < ActiveRecord::Base
+class Decoration < ActiveRecord::Base
 end
 # == Schema Information
 #
