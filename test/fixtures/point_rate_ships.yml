@@ -1,0 +1,26 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: 1
+  point_id: MyString
+  cat: 1
+  score: 1.5
+
+two:
+  user_id: 1
+  point_id: MyString
+  cat: 1
+  score: 1.5
+# == Schema Information
+#
+# Table name: point_rate_ships
+#
+#  id         :integer(4)      not null, primary key
+#  user_id    :integer(4)
+#  point_id   :string(255)
+#  cat        :integer(4)
+#  score      :float
+#  created_at :datetime
+#  updated_at :datetime
+#
+

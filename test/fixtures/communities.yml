@@ -1,0 +1,30 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  communityname: MyString
+  x: 1.5
+  y: 1.5
+  town: MyString
+  district: MyString
+
+two:
+  communityname: MyString
+  x: 1.5
+  y: 1.5
+  town: MyString
+  district: MyString
+# == Schema Information
+#
+# Table name: communities
+#
+#  id            :integer(4)      not null, primary key
+#  communityname :string(255)
+#  x             :float
+#  y             :float
+#  town          :string(255)
+#  district      :string(255)
+#  created_at    :datetime
+#  updated_at    :datetime
+#  address       :string(255)
+#
+

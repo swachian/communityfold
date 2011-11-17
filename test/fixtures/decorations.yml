@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  awardedflag: 1
+  user_id: 1
+  decorationtype_id: 1
+  awardedtime: 2011-10-24 16:19:58
+  awardtime: 2011-10-24 16:19:58
+
+two:
+  awardedflag: 1
+  user_id: 1
+  decorationtype_id: 1
+  awardedtime: 2011-10-24 16:19:58
+  awardtime: 2011-10-24 16:19:58
+# == Schema Information
+#
+# Table name: decorations
+#
+#  id                :integer(4)      not null, primary key
+#  awardedflag       :integer(4)
+#  user_id           :integer(4)
+#  decorationtype_id :integer(4)
+#  awardedtime       :datetime
+#  awardtime         :datetime
+#  created_at        :datetime
+#  updated_at        :datetime
+#
+
