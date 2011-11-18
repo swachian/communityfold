@@ -5,7 +5,7 @@ GIT
     annotate (2.4.1.beta1)
 
 GEM
-  remote: http://myrubygems/
+  remote: http://rubygems.org:8080/
   specs:
     actionmailer (3.1.1)
       actionpack (= 3.1.1)
