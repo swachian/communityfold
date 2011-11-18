@@ -182,6 +182,7 @@ ActiveRecord::Schema.define(:version => 20111115160547) do
     t.string   "rank"
     t.integer  "answers_count"
     t.string   "portraitlink",  :limit => 1024
+    t.text     "portrait"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

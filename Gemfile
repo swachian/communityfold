@@ -33,7 +33,7 @@ gem 'nokogiri'
 # File Uploads
 gem 'paperclip'
 
-gem 'annotate', :git => 'https://github.com/ctran/annotate_models.git' #, :branch => 'rake_compatibility'
+gem 'annotate', :git => 'http://github.com/ctran/annotate_models.git' #, :branch => 'rake_compatibility'
 # Use unicorn as the web server
 # gem 'unicorn'
 
