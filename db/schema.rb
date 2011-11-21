@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111115160547) do
+ActiveRecord::Schema.define(:version => 20111121081015) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.integer  "resource_id",   :null => false
@@ -47,16 +47,18 @@ ActiveRecord::Schema.define(:version => 20111115160547) do
   add_index "admin_users", ["reset_password_token"], :name => "index_admin_users_on_reset_password_token", :unique => true
 
   create_table "communities", :force => true do |t|
+    t.integer  "id2"
     t.string   "communityname"
     t.float    "x"
     t.float    "y"
     t.string   "town"
     t.string   "district"
+    t.string   "address"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "address"
   end
 
+  add_index "communities", ["address"], :name => "index_communities_on_address"
   add_index "communities", ["communityname"], :name => "index_communities_on_communityname"
   add_index "communities", ["district", "town"], :name => "index_communities_on_district_and_town"
   add_index "communities", ["town"], :name => "index_communities_on_town"

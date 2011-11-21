@@ -1,0 +1,5 @@
+<%= form_tag import_csv_admin_communities_path, :multipart =>true do |f| %>
+	<%=file_field_tag :file%>
+	 <div><%= submit_tag '上传' %></div>
+
+<% end %>

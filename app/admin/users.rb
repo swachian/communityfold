@@ -1,8 +1,8 @@
 # coding: utf-8
 ActiveAdmin.register User do
   menu :label => "用户信息"
-  
-  index do 
+
+  index do
     [:id, :login, :nick, :address].each {|col| column col}
     column "portrait" do |user|
       raw "<img src=\"#{user.id}/portrait\" alt=\"portrait\">"
@@ -10,14 +10,15 @@ ActiveAdmin.register User do
     default_actions
 
   end
-  
-  member_action :portrait do 
+
+  member_action :portrait do
     @user = User.find params[:id]
     render :text=> Base64.decode64(@user.portrait)
   end
-  
-end
 
+
+
+end
 
 # Table name: users
 #

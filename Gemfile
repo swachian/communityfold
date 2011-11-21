@@ -63,3 +63,4 @@ group :development do
 end
 
 gem 'capistrano'
+gem 'simple_form'

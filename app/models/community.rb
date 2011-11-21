@@ -1,9 +1,12 @@
 class Community < ActiveRecord::Base
-  geocoded_by :address
+#  set_primary_key :id2
+
+    
+ # geocoded_by :address
   #after_validation :geocode, :if => :address_changed? #fetch coordinates
-  def get_x_y
-    Geocoder.coordinates(address)
-  end
+  # def get_x_y
+    # Geocoder.coordinates(address)
+  # end
 #after_validation :reverse_geocode # fetch address
 
 #每一个request请求都自动带上了location这个method
