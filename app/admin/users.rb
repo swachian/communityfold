@@ -4,7 +4,7 @@ ActiveAdmin.register User do
   
   index do 
     [:id, :login, :nick, :address].each {|col| column col}
-    column "头像" do |user|
+    column "portrait" do |user|
       Base64.decode64 user.portrait if !user.blank? && !user.portrait.blank?
     end
     default_actions
