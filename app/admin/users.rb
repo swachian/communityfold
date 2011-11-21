@@ -5,10 +5,15 @@ ActiveAdmin.register User do
   index do 
     [:id, :login, :nick, :address].each {|col| column col}
     column "portrait" do |user|
-      Base64.decode64 user.portrait if !user.blank? && !user.portrait.blank?
+      raw "<img src=\"#{user.id}/portrait\" alt=\"portrait\">"
     end
     default_actions
 
+  end
+  
+  member_action :portrait do 
+    @user = User.find params[:id]
+    render :text=> Base64.decode64(@user.portrait)
   end
   
 end
