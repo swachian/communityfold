@@ -16,7 +16,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :rank
       t.integer :answers_count
       t.string :portraitlink, :limit => 1024
-      t.text   :portrait 
+      t.text   :portrait , :limit => 1024*1024*1024
 
       t.timestamps
     end
