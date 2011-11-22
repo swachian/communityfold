@@ -15,6 +15,7 @@ ActiveAdmin.register Point do
       f.input :point_id, :label=>"Point_id"
       #[:point_id, :cat, :rate, :ratecounts].each { |col| f.input col } 
     end
+    f.buttons
   end
   
 end
